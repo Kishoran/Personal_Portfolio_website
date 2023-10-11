@@ -1,0 +1,921 @@
+:root {
+  --customColor: #0044FF;
+  --purple: #CE00FF;
+  --orange: #FF4600;
+  --blue: #0044FF;
+  --cyan: #03FFC7;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+  top: 0;
+}
+
+#header {
+  position: relative;
+  background: #000513;
+  color: white;
+  padding-top: 220px;
+}
+
+#header-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: url(assets/images/hero.png);
+  background-position-x: center; 
+  background-size: cover;
+  width: 60%;
+}
+
+#nav-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#nav-header h1 {
+  position: relative;
+  left: 10%;
+  margin-top: 10px;
+  color: #0044FF;
+}
+
+#nav-items-header {
+  position: relative;
+  right: 10%;
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+#nav-item {
+  padding: 10px 7.5px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+#nav-item:hover {
+  background: #0044FF;
+  border-radius: 5px;
+}
+
+#intro-header {
+  position: relative;
+  width: fit-content;
+  left: 10%;
+  margin-bottom: 190px;
+  font-size: 1.4rem;
+}
+
+#p1 {
+  margin-bottom: 5px;
+}
+
+#intro-header h1 {
+  font-size: 3rem;
+}
+
+#p2 {
+  margin-top: 5px;
+}
+
+#typeprofession {
+  color: #0044FF;
+}
+
+#intro-header div {
+  margin: 15px 0;
+}
+
+#header-button {
+  background: #0044FF;
+  color: white;
+  border: solid 1px #0044FF;
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#header-button:hover {
+  background: none;
+}
+
+#header-icons {
+  position: relative;
+  left: 10%;
+  width: fit-content;
+}
+
+#header-icons .fa {
+  margin-right: 10px;
+  margin-bottom: 25px;
+  color: #0044FF;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 100px;
+}
+
+#about-container h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+#about-details {
+  display: flex;
+  margin-top: 70px;
+}
+
+#about-image {
+  background: url(assets/images/profile1.jpg);
+  background-position-x: center; 
+  background-size: cover;
+  width: 60%;
+  height: 420px;
+}
+
+#about-description {
+  margin-left: 140px;
+}
+
+#about-description h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#abouttypeprofession {
+  color: #0044FF;
+}
+
+#about-description p {
+  color: rgba(140, 140, 140, 0.923);
+  line-height: 32px;
+}
+
+#about-description div {
+  margin-top: 20px;
+}
+
+#about-button {
+  background: #0044FF;
+  color: white;
+  border: solid 2px #0044FF;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#about-button:hover {
+  background: none;
+  color: black;
+}
+
+#services-container {
+  background: black;
+  padding: 80px 0;
+  color: white;
+}
+
+#services-container h2 {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 100px;
+}
+
+#services-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+#services-description {
+  background: rgb(22, 22, 22);
+  text-align: center;
+  padding: 30px 0;
+  width: 31.5%;
+  border-radius: 15px;
+  margin-top: 80px;
+}
+
+#services-description:hover {
+  background: #0044FF;
+}
+
+#services-description:hover .fa {
+  color: white;
+}
+
+#services-description .fa {
+  font-size: 2rem;
+  color: #0044FF;
+}
+
+#services-description h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 10px;
+}
+
+#services-description p {
+  margin: 0 10px;
+}
+
+#skills-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+}
+
+#skills-container h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+#skills-percentages {
+  width: 100%;
+}
+
+#skills-subject {
+  color: gray;
+  margin-bottom: 5px;
+}
+
+#skills-subject span {
+  float: right;
+}
+
+#percentage-bar {
+  background: lightgray;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+#percentage1 {
+  background: #0044FF;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 95%;
+}
+
+#percentage2 {
+  background: #0044FF;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 85%;
+}
+
+#percentage3 {
+  background: #0044FF;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 90%;
+}
+
+#percentage4 {
+  background: #0044FF;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 80%;
+}
+
+#percentage5 {
+  background: #0044FF;
+  border-radius: 4px;
+  padding: 5px 0;
+  width: 95%;
+}
+
+#skills-details {
+  display: flex;
+  margin-top: 70px;
+}
+
+#skills-description {
+  margin-left: 180px;
+}
+
+#skills-description h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+#skills-description p {
+  color: rgba(140, 140, 140, 0.923);
+  line-height: 32px;
+}
+
+#skills-description div {
+  margin-top: 20px;
+}
+
+#skills-button {
+  background: #0044FF;
+  color: white;
+  border: solid 2px #0044FF;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#skills-button:hover {
+  background: none;
+  color: black;
+}
+
+#teams-container {
+  position: relative;
+  background: black;
+  padding: 80px 0;
+  color: white;
+}
+
+#teams-container h2 {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-left: 100px;
+}
+
+#teams-details-cover {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+#teams-details {
+  display: flex;
+  justify-content: space-between;
+  width: 270%;
+
+  clear: both;
+  animation-name: slider;
+  animation-duration: 6s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+}
+
+#teams-details:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slider {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-12.6%, 0);
+  }
+  50% {
+    transform: translate(-25.2%, 0);
+  }
+  75% {
+    transform: translate(-37.8%, 0);
+  }
+  100% {
+    transform: translate(-50.6%, 0);
+  }
+}
+
+#teams-description {
+  background: rgb(22, 22, 22);
+  text-align: center;
+  padding: 30px 0;
+  width: 11.5%;
+  border-bottom: solid 4px rgb(22, 22, 22);
+  border-radius: 15px;
+}
+
+
+#teams-description:hover {
+  background: #0044FF;
+  border-bottom: solid 4px white;
+}
+
+#teams-description div img {
+  object-fit: cover;
+  width: 140px;
+  height: 140px;
+  border: solid 4px #0044FF;
+  border-radius: 50%;
+}
+
+#teams-description:hover div img {
+  border: solid 4px white;
+}
+
+#teams-description h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+}
+
+#contact-container h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+  margin-bottom: 70px;
+}
+
+#contact-header {
+  margin-bottom: 20px;
+}
+
+#contact-header h3 {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+#contact-description {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#contact-description .fa {
+  font-size: 1.8rem;
+  color: #0044FF;
+}
+
+#contact-icons {
+  text-align: center;
+  width: 2.5%;
+  margin-top: 8px;
+}
+
+#contact-icons-details {
+  margin-left: 10px;
+}
+
+#contact-icons-details h3 {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+footer p span {
+  color: #0044FF;
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+
+  #about-image {
+    width: 100%;
+  }
+
+  #teams-description div img {
+    width: 110px;
+    height: 110px;
+  }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+  
+  #header {
+    padding-top: 180px;
+  }
+  
+  #nav-header h1 {
+    left: 4%;
+  }
+
+  #nav-items-header {
+    right: 4%;
+  }
+
+  #nav-item {
+    margin-left: 15px;
+    font-size: 0.85rem;
+  }
+
+  #intro-header {
+    margin-bottom: 150px;
+    left: 4%;
+    font-size: 1.2rem;
+  }
+
+  #intro-header h1 {
+    font-size: 2.5rem;
+  }
+
+  #header-icons {
+    left: 4%;
+  }
+
+  #about-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #about-details {
+    flex-direction: column;
+  }
+
+  #about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #about-description {
+    margin-left: 0;
+  }
+
+  #services-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #services-details {
+    left: 4%;
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  #skills-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #skills-details {
+    flex-direction: column;
+  }
+
+  #skills-percentages {
+    margin-bottom: 30px;
+  }
+
+  #skills-description {
+    margin-left: 0;
+  }
+
+  #teams-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #teams-details-cover {
+    left: 4%;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #teams-description div img {
+    width: 110px;
+    height: 110px;
+  }
+
+  #contact-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #contact-icons {
+    width: 10%;
+    margin-top: 8px;
+  }
+
+  #contact-icons-details {
+    margin-left: 25px;
+  } 
+
+}
+
+@media (min-width:481px) and (max-width:768px) {
+
+  #header {
+    padding-top: 130px;
+  }
+
+  #header-image {
+    width: 68%;
+  }
+
+  #nav-header h1 {
+    left: 4%;
+  }
+
+  #nav-items-header {
+    display: none;
+  }
+
+  #intro-header {
+    margin-bottom: 100px;
+    left: 4%;
+    font-size: 1rem;
+  }
+
+  #intro-header h1 {
+    font-size: 2rem;
+  }
+
+  #header-button {
+    padding: 8px 20px;
+  }
+
+  #header-icons {
+    left: 4%;
+  }
+
+  .fa {
+    font-size: 1.2rem;
+  }
+
+  #about-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 8%;
+
+  }
+
+  #about-details {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  #about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #about-description {
+    margin-left: 0;
+  }
+
+  #services-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #services-details {
+    flex-direction: column;
+    left: 4%;
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  #services-description {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #skills-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #skills-details {
+    flex-direction: column;
+  }
+
+  #skills-percentages {
+    margin-bottom: 30px;
+  }
+
+  #skills-description {
+    margin-left: 0;
+  }
+
+  #teams-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #teams-details-cover {
+    left: 4%;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #teams-details {
+    width: 410%;
+  }
+
+  #teams-description div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #contact-container {
+    position: relative;
+    left: 4%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #contact-icons {
+    width: 10%;
+    margin-top: 8px;
+  }
+
+  #contact-icons-details {
+    margin-left: 25px;
+  }
+
+}
+
+@media (min-width:320px) and (max-width:480px) {
+
+  #header {
+    padding-top: 80px;
+  }
+
+  #header-image {
+    width: 80%;
+  }
+
+  #nav-header h1 {
+    font-size: 1.7rem;
+    left: 2%;
+  }
+
+  #nav-items-header {
+    display: none;
+  }
+
+  #intro-header {
+    margin-bottom: 50px;
+    margin-right: 4%;
+    left: 2%;
+    font-size: 1rem;
+    width: 50%;
+  }
+
+  #intro-header h1 {
+    font-size: 2rem;
+  }
+
+  #header-button {
+    padding: 8px 20px;
+  }
+
+  #header-icons {
+    left: 2%;
+  }
+
+  .fa {
+    font-size: 1.2rem;
+  }
+
+  #about-container {
+    position: relative;
+    left: 2%;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 4%;
+  }
+
+  #about-details {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  #about-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #about-description {
+    margin-left: 0;
+  }
+
+  #services-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #services-details {
+    flex-direction: column;
+    left: 4%;
+    margin: 0;
+    margin-right: 8%;
+  }
+
+  #services-description {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  #skills-container {
+    position: relative;
+    left: 2%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 4%;
+  }
+
+  #skills-details {
+    flex-direction: column;
+  }
+
+  #skills-percentages {
+    margin-bottom: 30px;
+  }
+
+  #skills-description {
+    margin-left: 0;
+  }
+
+  #teams-container h2 {
+    left: 4%;
+    margin-left: 0;
+    width: fit-content;
+  }
+
+  #teams-details-cover {
+    left: 4%;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  #teams-details {
+    width: 864%;
+  }
+
+  #teams-description div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #contact-container {
+    position: relative;
+    left: 2%;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 4%;
+  }
+
+  #contact-icons {
+    width: 10%;
+    margin-top: 8px;
+  }
+
+  #contact-icons-details {
+    margin-left: 20px;
+  }
+
+}
